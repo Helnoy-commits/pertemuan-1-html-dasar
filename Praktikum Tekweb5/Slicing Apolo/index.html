@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Apollo — Landing (Versi Mahasiswa)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Small visual tweaks to match the sample layout */
+    .card-shadow{box-shadow:0 6px 18px rgba(13,38,77,0.08)}
+  </style>
+</head>
+<body class="antialiased text-slate-800 bg-white">
+  <!-- Header -->
+  <header class="border-b border-slate-200">
+    <div class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold">A</div>
+        <div class="font-semibold">APOLLO</div>
+      </div>
+      <nav class="flex items-center gap-4">
+        <a href="#features" class="text-sm hover:underline">Features</a>
+        <a href="#how" class="text-sm hover:underline">How it works</a>
+        <button class="text-sm px-3 py-1.5 border rounded-md">Sign in</button>
+        <button class="text-sm px-3 py-1.5 bg-blue-600 text-white rounded-md">Sign up</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main class="max-w-6xl mx-auto px-6">
+    <section class="grid md:grid-cols-2 gap-8 items-center py-12">
+      <div>
+        <h1 class="text-3xl md:text-4xl font-extrabold text-slate-900 leading-tight">Learn, build &amp; showcase — all in one platform</h1>
+        <p class="mt-4 text-slate-600">Apollo adalah ruang belajar dan proyek tempat kamu bisa menyimpan portofolio, kerjakan proyek bareng teman, dan belajar pemrograman — tanpa ribet.</p>
+
+        <div class="mt-6 flex gap-3">
+          <a href="#" class="inline-block px-4 py-2 bg-blue-600 text-white rounded-md shadow-sm">Get Started Free</a>
+          <a href="#features" class="inline-block px-4 py-2 border rounded-md">Explore Features</a>
+        </div>
+
+        <p class="mt-6 text-sm text-slate-500">Nggak ribet, cocok buat tugas kampus, portofolio, atau coba-coba latihan coding.</p>
+      </div>
+
+      <div class="flex justify-center md:justify-end">
+        <!-- gunakan gambar yang di-upload pengguna -->
+        <img src="/mnt/data/e8b0b994-7858-4cd5-80bc-30da58adc184.png" alt="illustration" class="w-80 md:w-96">
+      </div>
+    </section>
+
+    <!-- Features cards -->
+    <section id="features" class="bg-slate-50 rounded-xl p-8 md:p-12 -mt-2 card-shadow">
+      <h2 class="text-center text-lg font-semibold text-slate-800">What you'll get with Apollo</h2>
+      <p class="text-center text-slate-500 mt-2">Satu ekosistem buat belajar lebih cepat, bangun proyek, dan simpan portofolio.</p>
+
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-lg card-shadow">
+          <div class="w-12 h-12 bg-slate-100 rounded-md flex items-center justify-center">📚</div>
+          <h3 class="mt-4 font-semibold">Learning Management</h3>
+          <p class="mt-2 text-sm text-slate-500">Materi terstruktur, kuis, dan latihan supaya belajar lebih terarah.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg card-shadow">
+          <div class="w-12 h-12 bg-slate-100 rounded-md flex items-center justify-center">🛠️</div>
+          <h3 class="mt-4 font-semibold">Project Management</h3>
+          <p class="mt-2 text-sm text-slate-500">Kelola tugas, kolaborasi, dan versioning untuk proyek kampus atau personal.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg card-shadow">
+          <div class="w-12 h-12 bg-slate-100 rounded-md flex items-center justify-center">🧾</div>
+          <h3 class="mt-4 font-semibold">Portfolio Management</h3>
+          <p class="mt-2 text-sm text-slate-500">Simpan hasil kerja, tampilkan di CV atau link pribadi.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="how" class="mt-10 bg-white p-8 rounded-lg text-center">
+      <div class="max-w-3xl mx-auto">
+        <h3 class="text-xl font-semibold">Ready to launch your journey?</h3>
+        <p class="mt-2 text-slate-600">Coba Apollo sekarang. Gratis, simpel, dan pas untuk tugas kampus atau portofolio.</p>
+        <a href="#" class="inline-block mt-4 px-5 py-2 bg-blue-600 text-white rounded-md">Get Started Free</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="mt-12 bg-slate-900 text-slate-300">
+    <div class="max-w-6xl mx-auto px-6 py-10 grid md:grid-cols-3 gap-6">
+      <div>
+        <div class="flex items-center gap-3 text-white font-semibold mb-2">
+          <div class="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center">A</div>
+          APOLLO
+        </div>
+        <p class="text-sm text-slate-400">Advanced Programming and Online Learning laboratory — versi sederhana untuk tugas.</p>
+      </div>
+      <div>
+        <h4 class="font-medium">Quick links</h4>
+        <ul class="mt-2 text-sm text-slate-400 space-y-1">
+          <li>Home</li>
+          <li>Features</li>
+          <li>How it works</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-medium">Resources</h4>
+        <ul class="mt-2 text-sm text-slate-400 space-y-1">
+          <li>Support</li>
+          <li>Privacy</li>
+          <li>Terms</li>
+        </ul>
+      </div>
+    </div>
+    <div class="text-center text-xs text-slate-500 py-4">© 2025 APOLLO — All rights reserved</div>
+  </footer>
+</body>
+</html>

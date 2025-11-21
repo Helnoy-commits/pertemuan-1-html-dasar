@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kartu Menangkal</title>
+
+  <style>
+    body {
+      margin: 0;
+      background: #dcdcdc;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      width: 250px;
+      padding: 40px 25px;
+      text-align: center;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+      color: #fff;
+
+      background: #5a8dee;
+    }
+
+    h3 {
+      margin: 0;
+      font-size: 22px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    #angka {
+      font-size: 50px;
+      margin: 30px 0;
+      font-weight: bold;
+    }
+
+    .btn-group {
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+    }
+
+    .btn-group button {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      border: none;
+      font-size: 22px;
+      cursor: pointer;
+      transition: 0.2s;
+      background: rgba(255, 255, 255, 0.85);
+      color: #333;
+    }
+
+    .btn-group button:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <h3>COUNTER</h3>
+
+    <p id="angka">5</p>
+
+    <div class="btn-group">
+      <button onclick="tambah()">+</button>
+      <button onclick="kurang()">-</button>
+    </div>
+  </div>
+
+  <script>
+    let nilai = 5;
+    const angka = document.getElementById("angka");
+
+    function tambah() {
+      nilai++;
+      angka.textContent = nilai;
+    }
+
+    function kurang() {
+      if (nilai > 0) nilai--;
+      angka.textContent = nilai;
+    }
+  </script>
+
+</body>
+</html>

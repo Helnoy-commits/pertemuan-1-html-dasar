@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil Helen Noya</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-gray-100 text-gray-800">
+    <header class="bg-blue-700 text-white py-4">
+      <div class="container mx-auto flex justify-between items-center px-6">
+        <h1 class="text-xl font-bold">My Portfolio</h1>
+        <nav class="space-x-6">
+          <a href="#about" class="hover:underline">Home</a>
+          <a href="#projects" class="hover:underline">Projects</a>
+          <a href="#contact" class="hover:underline">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-10">
+      <section id="about" class="flex flex-col md:flex-row items-center gap-8 mb-12">
+        <img
+          src="noy.jpg/" alt="Foto noy" class="profile-img"
+          alt="Foto Helen Noya"
+          class="w-56 h-56 object-cover rounded-full shadow-md"
+        />
+        <div>
+          <h2 class="text-2xl font-semibold mb-3">Halo, saya Helen Noya</h2>
+          <p class="text-justify leading-relaxed">
+            Saya mahasiswa Sistem Informasi di Universitas Ahmad Dahlan. Saat ini saya sedang belajar tentang pembuatan website
+            menggunakan HTML, CSS, dan juga sedikit JavaScript. Saya suka hal-hal yang berhubungan dengan desain dan teknologi.
+            Harapan saya ke depan bisa mengembangkan kemampuan di bidang web development dan UI design.
+          </p>
+        </div>
+      </section>
+
+      <section id="projects" class="mb-12">
+        <h2 class="text-2xl font-semibold text-center mb-8">Project Saya</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <article class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img
+              src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt="Website Akademik"
+              class="w-full h-44 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="font-semibold text-lg mb-2">Sistem Akademik</h3>
+              <p class="text-sm mb-3">Website sederhana untuk mengelola data mahasiswa dan nilai.</p>
+              <a href="#" class="text-blue-600 text-sm hover:underline">Lihat project</a>
+            </div>
+          </article>
+
+          <article class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img
+              src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt="Aplikasi Keuangan"
+              class="w-full h-44 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="font-semibold text-lg mb-2">Aplikasi Keuangan</h3>
+              <p class="text-sm mb-3">Membantu mencatat pengeluaran dan pemasukan pribadi.</p>
+              <a href="#" class="text-blue-600 text-sm hover:underline">Lihat project</a>
+            </div>
+          </article>
+
+          <article class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img
+              src="https://images.pexels.com/photos/3184656/pexels-photo-3184656.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt="Portfolio"
+              class="w-full h-44 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="font-semibold text-lg mb-2">Portfolio Website</h3>
+              <p class="text-sm mb-3">Website pribadi untuk menampilkan hasil tugas dan karya.</p>
+              <a href="#" class="text-blue-600 text-sm hover:underline">Lihat project</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="text-center">
+        <h2 class="text-2xl font-semibold mb-6">Hubungi Saya</h2>
+        <div class="flex flex-col md:flex-row justify-center gap-8">
+          <div class="bg-white shadow-md rounded-lg p-5 w-72 mx-auto">
+            <h3 class="font-semibold mb-1">Email</h3>
+            <p><a href="mailto:helennoya2612@gmail.com" class="text-blue-600 hover:underline">helennoya2612@gmail.com</a></p>
+          </div>
+
+          <div class="bg-white shadow-md rounded-lg p-5 w-72 mx-auto">
+            <h3 class="font-semibold mb-1">Whatsapp</h3>
+            <p><a href="https://wa.me/082184677951" class="text-blue-600 hover:underline">082184677951</a></p>
+          </div>
+
+          <div class="bg-white shadow-md rounded-lg p-5 w-72 mx-auto">
+            <h3 class="font-semibold mb-1">Lokasi</h3>
+            <p>Bantul, Yogyakarta</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-blue-700 text-white text-center py-4 mt-12">
+      <p>&copy; 2025 Helen Noya</p>
+    </footer>
+  </body>
+</html>

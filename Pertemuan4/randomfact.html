@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Useless Facts</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #333;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    h1 {
+      font-weight: 600;
+      margin-bottom: 25px;
+      font-size: 28px;
+    }
+
+    #fact-box {
+      margin-bottom: 20px;
+    }
+
+    #fact {
+      font-size: 18px;
+      background: #f7f7f7;
+      padding: 18px 20px;
+      border-radius: 8px;
+      display: inline-block;
+      min-width: 300px;
+    }
+
+    button {
+      background: #3d7bff;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: 0.2s;
+    }
+
+    button:hover {
+      background: #2f63d6;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>🤓 Random Useless Facts</h1>
+
+    <div id="fact-box">
+      <p id="fact">Sea otters hold hands while sleeping to avoid drifting apart.</p>
+    </div>
+
+    <button id="new-fact">Get Another Random Fact</button>
+  </div>
+
+  <script>
+    const facts = [
+      "Sea otters hold hands while sleeping to avoid drifting apart.",
+      "Bananas are berries, but strawberries aren’t.",
+      "Honey never spoils — archaeologists found 3000-year-old honey still edible.",
+      "Octopuses have three hearts and blue blood.",
+      "A group of flamingos is called a 'flamboyance'.",
+      "You can’t hum while holding your nose closed.",
+      "Wombat poop is cube-shaped.",
+      "Sharks existed before trees.",
+      "Some cats are allergic to humans.",
+      "The inventor of the frisbee was turned into a frisbee after he died."
+    ];
+
+    document.getElementById("new-fact").addEventListener("click", () => {
+      const randomIndex = Math.floor(Math.random() * facts.length);
+      document.getElementById("fact").textContent = facts[randomIndex];
+    });
+  </script>
+</body>
+</html>
